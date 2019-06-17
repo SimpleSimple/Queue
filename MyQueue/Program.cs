@@ -10,7 +10,15 @@ namespace MyQueue
     {
         static void Main(string[] args)
         {
+            var myQueue = new MyQueue<string>();
 
+            Console.WriteLine("队列大小：" + myQueue.Size());
+
+            myQueue.Enqueue("hello");
+
+            Console.WriteLine("队列大小：" + myQueue.Size());
+
+            Console.Read();
         }
     }
 }
